@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS</title>
+    <style>
+        .form-group{
+            margin-bottom: 15px;
+        }
+        label {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>HTML KAYIT FORMU</h1>
+    
+    
+    <form action="/sumbit_form.html" method="get">
+        <h2>Kullanıcı Bilgileri</h2>
+        <p>Formu doldurarak bize katılın</p>
+        
+        <div class="form-group">
+            <label for="name">Ad:</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="surname">Soyad:</label>
+            <input type="text" name="surname" id="surname">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div class="form-group">
+             <label for="password">Password:</label>
+             <input type="password" name="password" id="password">
+        </div>
+
+
+        <div class="form-group">
+             <label for="gender">Cinsiyet:</label>
+             <input type="radio" name ="gender" id="kadin" value="kadin" required>Kadın
+             <input type="radio" name="gender" id="erkek" value="erkek" required>Erkek
+        </div>
+
+     <div class="form-group">
+            <h2>En sevdiğiniz meyve nedir?</h2>
+            <p>Aşağıdaki seçeneklerden sadece en sevdiğiniz 1 meyveyi seçiniz</p>
+     
+                <select name="meyve" id="meyve">
+                    <option value="elma">Elma</option>
+                     <option value="armut">Armut</option>
+                        <option value="muz">Muz</option>
+                          <option value="çilek">Çilek</option>
+                              <option value="karpuz">Karpuz</option>
+                                 </select>  
+    </div>
+
+     <div class="form-group">    
+             <h2>Cover Letter</h2>
+                <p>Hakkınızda bahsetmek istediğiniz özelliklerinizden bahsedebilirsiniz</p>
+                <textarea name="cover_letter" id="cover_letter" 
+                            cols="30" rows="10"
+                             placeholder="Merhaba,Ben Ahmet vs..."></textarea>
+    </div>
+
+    <div class="form-group">
+        <button type="reset">Formu Temizle</button>
+        <button type="submit">Formu Gönder</button>
+    </div>
+     <footer>
+            <p>Formu Göndererek <a href="https://www.google.com">Kullanıcı Sözleşmesi</a>ni kabul etmiş olursunuz</p>
+    </footer>
+    </form>
+</html>
